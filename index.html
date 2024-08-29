@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Metamorphous&display=swap" rel="stylesheet">
+    <title>A busca por uma espada lendária</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-2.png" alt="">
+            <p>Você é um explorador que decide tentar encontrar a espada lendária "Excalibur" com a intenção de se tornar uma lenda. Qual seu primeiro passo?</p>
+            <button class="btn-proximo" data-proximo="1">Viajar para a Grã-Bretanha e tentar achá-la</button>
+            <button class="btn-proximo" data-proximo="2">Ficar e procurá-la no Brasil</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1.png" alt="">
+            <p>Você viaja até a Grã-Bretanha e quando chega pensa no que fazer.</p>
+            <button class="btn-proximo" data-proximo="4">Procurar a espada sem nehnuma informação</button>
+            <button class="btn-proximo" data-proximo="3">Pedir por informações</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo0-2.png" alt="">
+            <p>Você decide ficar e tentar achar a espada no Brasil, mas não a encontra, o que você faz?</p>
+            <button class="btn-proximo" data-proximo="5">Continuar a procurando</button>
+            <button class="btn-proximo" data-proximo="6">Desistir da aventura</button>
+        </div>
+        
+        <div class="passo" id="passo-3">
+            <p>Você começa a pedir por informações para diversas pessoas, em vários lugares, tentando achar uma pista confiável, e acaba com essas duas escolhas:</p>
+            <button class="btn-proximo" data-proximo="7">Seguir a pista de um velho estranho</button>
+            <button class="btn-proximo" data-proximo="8">Confiar na pista de um barman de um bar misterioso</button>
+        </div>
+        
+        <div class="passo" id="passo-4">
+            <p>Você tenta achar "Excalibur" sem nehuma dica e acaba por não encontrar nada, e agora?</p>
+            <button class="btn-proximo" data-proximo="5">Continuar a procurá-la até a encontrar</button>
+            <button class="btn-proximo" data-proximo="6">Dar um fim a essa aventura</button>
+        </div>
+        
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-game over.png" alt="">
+            <p>Sua procura se arrasta por toda a vida, com a população começando a te chamar de "Louco da Excalibur".</p>
+            <button class="btn-proximo" data-proximo="0">Tentar novamente</button>
+        </div>
+        
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-game over.png" alt="">
+            <p>Você desiste da aventura e pensa o quão tolo foi ao tentar encontrar uma espada que só existe em lendas.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar novamente</button>
+        </div>
+        
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-passo7.jpg" alt="">
+            <p>Você segue até uma floresta aonde acha algumas ruínas, qual a sua próxima ação?</p>
+            <button class="btn-proximo" data-proximo="9">Vasculhar as ruínas</button>
+        </div>
+        
+        <div class="passo" id="passo-8">
+            <p>A pista do barman te leva a um lugar onde não tinha nada, você perde as esperanças e desiste de achar a "Excalibur".</p>
+            <button class="btn-proximo" data-proximo="10">Voltar ao Brasil</button>
+        </div>
+        
+        <div class="passo" id="passo-9">
+            <img src="img/cenario-passo9-excalibur.jpg" alt="">
+            <p>Você encontra "Excalibur" enficada dentro de uma pedra, assim como dizem as histórias, então você a puxa e consegue retirá-la!!!. Dessa forma, conseguindo obtê-la em sua posse.</p>
+            <button class="btn-proximo" data-proximo="11">...</button>
+        </div>
+        
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-game over.png" alt="">
+            <p>Você volta ao Brasil e decide continuar a sua vida de onde parou.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar novamente</button>
+        </div>
+        
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11.jpg" alt="imagem que representa a gravação do nome do jogador na história">
+            <p>Graças a esse feito, seu nome foi gravado nos livros de história, sendo sempre lembrado como um explorador determinado e lendário, fazendo com que todos os futuros exploradores te tenham como ídolo!</p>
+            <button class="btn-proximo" data-proximo="0">Finalizar aventura</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
